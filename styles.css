@@ -1,0 +1,13 @@
+:root {
+  --bg:#0b1410; --card:#0e1a15; --text:#e8f4ef; --accent:#2ec27e; --accent-2:#1b7f52;
+}
+:root[data-theme="blue"],
+body[data-theme="blue"] { --accent:#2b74ff; --accent-2:#1b3f8f; }
+
+body { margin:0; background:var(--bg); color:var(--text); font:14px/1.4 system-ui, sans-serif; }
+#hud { display:flex; justify-content:space-between; padding:8px 12px; background:linear-gradient(0deg,transparent,rgba(255,255,255,.03)); }
+#hud h1 { margin:0 0 6px; font-size:18px; color:var(--accent); }
+#hud button { margin-right:6px; background:var(--accent); border:none; color:white; padding:6px 10px; border-radius:10px; cursor:pointer; }
+#hud button:hover { filter:brightness(1.05); }
+#game { display:grid; place-items:center; height:calc(100vh - 64px); }
+canvas { border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,.35); background:var(--card); }
