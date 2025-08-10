@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guild Game V2 Test</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 200px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guild Game Asset Test</h1>
+    <img id="logo" src="assets/images/logo.png" alt="Game Logo">
+    <div>
+        <button onclick="rollDice()">Roll Dice</button>
+    </div>
+    <img id="dice" src="assets/images/dice1.png" alt="Dice Roll">
+    <audio id="diceSound" src="assets/sounds/dice_roll.mp3"></audio>
+
+    <script>
+        function rollDice() {
+            let roll = Math.floor(Math.random() * 6) + 1;
+            document.getElementById("dice").src = `assets/images/dice${roll}.png`;
+            document.getElementById("diceSound").play();
+        }
+    </script>
+</body>
+</html>
