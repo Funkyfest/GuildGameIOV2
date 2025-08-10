@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Guild — Real Estate Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+</head>
+<body data-theme="green">
+  <div id="hud">
+    <div class="left">
+      <h1>The Guild</h1>
+      <div>Cash: $<span id="cash">30000</span></div>
+      <div>Goal: Buy the mansion</div>
+      <button id="theme">Switch Blue/Green</button>
+      <button id="support">Support this game</button>
+      <button id="mute">Mute</button>
+    </div>
+    <div class="right">
+      <button id="start">Start</button>
+      <div id="timer">02:00</div>
+    </div>
+  </div>
+  <div id="game"></div>
+
+  <script src="asset-manifest.js"></script>
+  <script src="game.js" type="module"></script>
+</body>
+</html>
